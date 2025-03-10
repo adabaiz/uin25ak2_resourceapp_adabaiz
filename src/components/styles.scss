@@ -1,0 +1,77 @@
+@import 'variables';
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: $container-bg;
+  box-shadow: 0 4px 8px $shadow-color;
+  width: 50%;
+  min-width: 400px;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $border-color;
+
+  .tab {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+
+    &.active {
+      background-color: white;
+      color: $primary-color;
+      border-bottom: 2px solid white;
+    }
+  }
+}
+
+.content-box {
+  padding: 20px;
+
+  .content {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+h1 {
+  color: $primary-color;
+  font-size: 24px;
+}
+
+p {
+  color: $text-color;
+  font-size: 16px;
+}
+
+ul {
+  padding-left: 20px;
+
+  li {
+    margin: 5px 0;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: underline;
+}
