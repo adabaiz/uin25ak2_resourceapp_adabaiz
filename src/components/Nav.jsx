@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const nav = () => {
+const Nav = () => {
   return (
     <nav className="tabs">
       <Link to="html" className="tab">HTML</Link>
@@ -13,4 +13,4 @@ const nav = () => {
   );
 };
 
-export default nav;
+export default Nav;

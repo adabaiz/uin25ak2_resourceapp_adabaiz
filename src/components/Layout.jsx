@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "./nav"; 
+import Nav from "./Nav"; 
 import "./styles.scss";
 
-const Ressursarkiv = ({ children }) => {
+const layout = ({ children }) => {
   return (
     <>
       <Nav />
@@ -13,4 +13,4 @@ const Ressursarkiv = ({ children }) => {
   );
 };
 
-export default Ressursarkiv;
+export default layout;
