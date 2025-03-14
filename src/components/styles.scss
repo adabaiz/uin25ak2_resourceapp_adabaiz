@@ -1,16 +1,6 @@
-$font-family: Arial, sans-serif;
-$background-color: #E1E5EE;
-$container-bg: #fff;
-$shadow-color: rgba(0, 0, 0, 0.1);
-$primary-color: #1C2532;
-$border-color: #2A324B;
-$text-color: #333;
-$link-color: #1C2532;
-
-
 body {
-  font-family: $font-family;
-  background-color: $background-color;
+  font-family: Arial, sans-serif;
+  background-color: #E1E5EE;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -19,8 +9,8 @@ body {
 }
 
 .container {
-  background: $container-bg;
-  box-shadow: 0 4px 8px $shadow-color;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 50%;
   min-width: 400px;
   padding: 20px;
@@ -29,57 +19,57 @@ body {
 .tabs {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid $border-color;
+  border-bottom: 2px solid #2A324B;
+}
 
-  .tab {
-    background-color: $primary-color;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    flex-grow: 1;
-    text-align: center;
-    font-weight: bold;
+.tabs .tab {
+  background-color: #1C2532;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  flex-grow: 1;
+  text-align: center;
+  font-weight: bold;
+}
 
-    &.active {
-      background-color: white;
-      color: $primary-color;
-      border-bottom: 2px solid white;
-    }
-  }
+.tabs .tab.active {
+  background-color: white;
+  color: #1C2532;
+  border-bottom: 2px solid white;
 }
 
 .content-box {
   padding: 20px;
+}
 
-  .content {
-    display: none;
+.content-box .content {
+  display: none;
+}
 
-    &.active {
-      display: block;
-    }
-  }
+.content-box .content.active {
+  display: block;
 }
 
 h1 {
-  color: $primary-color;
+  color: #1C2532;
   font-size: 24px;
 }
 
 p {
-  color: $text-color;
+  color: #333;
   font-size: 16px;
 }
 
 ul {
   padding-left: 20px;
+}
 
-  li {
-    margin: 5px 0;
-  }
+ul li {
+  margin: 5px 0;
 }
 
 a {
-  color: $link-color;
+  color: #1C2532;
   text-decoration: underline;
 }
